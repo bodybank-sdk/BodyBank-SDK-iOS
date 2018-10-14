@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
     s.source = {
         :http => "https://github.com/skonb/BodyBankSDK/BodyBankEnterprise.framework.zip"
     }
-    s.vendored_frameworks = 'BodyBankEnterprise.framework'
+    s.ios.vendored_frameworks = 'BodyBankEnterprise.framework'
     s.dependency 'AWSAppSync', '~> 2.6.22'
     s.dependency 'AWSS3', '~> 2.6.30'
     s.dependency 'FCFileManager', '~> 1.0.20'
