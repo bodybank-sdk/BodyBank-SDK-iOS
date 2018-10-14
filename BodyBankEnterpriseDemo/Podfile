@@ -6,7 +6,7 @@ target 'BodyBankEnterpriseDemo' do
   use_frameworks!
 
   # Pods for BodyBankEnterpriseDemo
-  pod 'BodyBankEnterprise', git: 'github:skonb/BodyBankSDK'
+  pod 'BodyBankEnterprise', git: 'https://github.com/skonb/BodyBankSDK'
 
   target 'BodyBankEnterpriseDemoTests' do
     inherit! :search_paths

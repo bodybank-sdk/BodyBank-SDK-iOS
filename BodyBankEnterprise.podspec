@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
     s.homepage = 'https://originalstitch.com'
     s.platform = :ios, '10.0'
     s.source = {
-        :http => "https://github.com/skonb/BodyBankSDK/blob/master/BodyBankEnterprise.framework.zip"
+        :http => "https://github.com/skonb/BodyBankSDK/raw/master/BodyBankEnterprise.framework.zip"
     }
     s.ios.vendored_frameworks = 'BodyBankEnterprise.framework'
     s.dependency 'AWSAppSync', '~> 2.6.22'
