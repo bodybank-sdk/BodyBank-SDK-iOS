@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CE305A28A8E51D4BC36C8BF /* Pods_BodyBankEnterpriseDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCE435F8E2E63CFE7D12796F /* Pods_BodyBankEnterpriseDemo.framework */; };
+		5DB8B16683013398DBD445F9 /* Pods_BodyBankEnterpriseDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10E33AE6DDC06B4DFEC36248 /* Pods_BodyBankEnterpriseDemoTests.framework */; };
 		8E58B4842173FA2F00FAB5C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E58B4832173FA2F00FAB5C2 /* AppDelegate.swift */; };
 		8E58B4862173FA2F00FAB5C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E58B4852173FA2F00FAB5C2 /* ViewController.swift */; };
 		8E58B4892173FA2F00FAB5C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E58B4872173FA2F00FAB5C2 /* Main.storyboard */; };
@@ -14,6 +16,7 @@
 		8E58B48E2173FA3200FAB5C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E58B48C2173FA3200FAB5C2 /* LaunchScreen.storyboard */; };
 		8E58B4992173FA3200FAB5C2 /* BodyBankEnterpriseDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E58B4982173FA3200FAB5C2 /* BodyBankEnterpriseDemoTests.swift */; };
 		8E58B4A42173FA3200FAB5C2 /* BodyBankEnterpriseDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E58B4A32173FA3200FAB5C2 /* BodyBankEnterpriseDemoUITests.swift */; };
+		C73FE4EF918296CD8AF2DC3A /* Pods_BodyBankEnterpriseDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B034148D30E5A0A5A7246E6E /* Pods_BodyBankEnterpriseDemoUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10E33AE6DDC06B4DFEC36248 /* Pods_BodyBankEnterpriseDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BodyBankEnterpriseDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40E40512F7FD63A3C333EE32 /* Pods-BodyBankEnterpriseDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BodyBankEnterpriseDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BodyBankEnterpriseDemo/Pods-BodyBankEnterpriseDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		4B7EDB3016D9C3C33E90DCA4 /* Pods-BodyBankEnterpriseDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BodyBankEnterpriseDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BodyBankEnterpriseDemoTests/Pods-BodyBankEnterpriseDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8E58B4802173FA2F00FAB5C2 /* BodyBankEnterpriseDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BodyBankEnterpriseDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E58B4832173FA2F00FAB5C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E58B4852173FA2F00FAB5C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +53,12 @@
 		8E58B49F2173FA3200FAB5C2 /* BodyBankEnterpriseDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BodyBankEnterpriseDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E58B4A32173FA3200FAB5C2 /* BodyBankEnterpriseDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyBankEnterpriseDemoUITests.swift; sourceTree = "<group>"; };
 		8E58B4A52173FA3200FAB5C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A04C285221383FEE1A18A841 /* Pods-BodyBankEnterpriseDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BodyBankEnterpriseDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-BodyBankEnterpriseDemo/Pods-BodyBankEnterpriseDemo.release.xcconfig"; sourceTree = "<group>"; };
+		B034148D30E5A0A5A7246E6E /* Pods_BodyBankEnterpriseDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BodyBankEnterpriseDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCE435F8E2E63CFE7D12796F /* Pods_BodyBankEnterpriseDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BodyBankEnterpriseDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE2DD1FB520D82693C3E0707 /* Pods-BodyBankEnterpriseDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BodyBankEnterpriseDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BodyBankEnterpriseDemoTests/Pods-BodyBankEnterpriseDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		E8355E24B0E6B5B03B20FD0E /* Pods-BodyBankEnterpriseDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BodyBankEnterpriseDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BodyBankEnterpriseDemoUITests/Pods-BodyBankEnterpriseDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E8C26AEF6D63093F676022A5 /* Pods-BodyBankEnterpriseDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BodyBankEnterpriseDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BodyBankEnterpriseDemoUITests/Pods-BodyBankEnterpriseDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CE305A28A8E51D4BC36C8BF /* Pods_BodyBankEnterpriseDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DB8B16683013398DBD445F9 /* Pods_BodyBankEnterpriseDemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +82,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C73FE4EF918296CD8AF2DC3A /* Pods_BodyBankEnterpriseDemoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D7C244AFBE27881374D5969 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				40E40512F7FD63A3C333EE32 /* Pods-BodyBankEnterpriseDemo.debug.xcconfig */,
+				A04C285221383FEE1A18A841 /* Pods-BodyBankEnterpriseDemo.release.xcconfig */,
+				4B7EDB3016D9C3C33E90DCA4 /* Pods-BodyBankEnterpriseDemoTests.debug.xcconfig */,
+				CE2DD1FB520D82693C3E0707 /* Pods-BodyBankEnterpriseDemoTests.release.xcconfig */,
+				E8C26AEF6D63093F676022A5 /* Pods-BodyBankEnterpriseDemoUITests.debug.xcconfig */,
+				E8355E24B0E6B5B03B20FD0E /* Pods-BodyBankEnterpriseDemoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8E58B4772173FA2F00FAB5C2 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +109,8 @@
 				8E58B4972173FA3200FAB5C2 /* BodyBankEnterpriseDemoTests */,
 				8E58B4A22173FA3200FAB5C2 /* BodyBankEnterpriseDemoUITests */,
 				8E58B4812173FA2F00FAB5C2 /* Products */,
+				0D7C244AFBE27881374D5969 /* Pods */,
+				F660DB41F09C73B07F203168 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +155,16 @@
 			path = BodyBankEnterpriseDemoUITests;
 			sourceTree = "<group>";
 		};
+		F660DB41F09C73B07F203168 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCE435F8E2E63CFE7D12796F /* Pods_BodyBankEnterpriseDemo.framework */,
+				10E33AE6DDC06B4DFEC36248 /* Pods_BodyBankEnterpriseDemoTests.framework */,
+				B034148D30E5A0A5A7246E6E /* Pods_BodyBankEnterpriseDemoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +172,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E58B4A82173FA3200FAB5C2 /* Build configuration list for PBXNativeTarget "BodyBankEnterpriseDemo" */;
 			buildPhases = (
+				8D966B1FB4B146FB0B84D1D4 /* [CP] Check Pods Manifest.lock */,
 				8E58B47C2173FA2F00FAB5C2 /* Sources */,
 				8E58B47D2173FA2F00FAB5C2 /* Frameworks */,
 				8E58B47E2173FA2F00FAB5C2 /* Resources */,
+				71F28513F3C9A377A0AA1149 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +191,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E58B4AB2173FA3200FAB5C2 /* Build configuration list for PBXNativeTarget "BodyBankEnterpriseDemoTests" */;
 			buildPhases = (
+				6C7B5F02800421F6CEA22CFE /* [CP] Check Pods Manifest.lock */,
 				8E58B4902173FA3200FAB5C2 /* Sources */,
 				8E58B4912173FA3200FAB5C2 /* Frameworks */,
 				8E58B4922173FA3200FAB5C2 /* Resources */,
@@ -167,6 +210,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E58B4AE2173FA3200FAB5C2 /* Build configuration list for PBXNativeTarget "BodyBankEnterpriseDemoUITests" */;
 			buildPhases = (
+				3D463972A7CA5FE49F6E4BF4 /* [CP] Check Pods Manifest.lock */,
 				8E58B49B2173FA3200FAB5C2 /* Sources */,
 				8E58B49C2173FA3200FAB5C2 /* Frameworks */,
 				8E58B49D2173FA3200FAB5C2 /* Resources */,
@@ -250,6 +294,91 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D463972A7CA5FE49F6E4BF4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BodyBankEnterpriseDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C7B5F02800421F6CEA22CFE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BodyBankEnterpriseDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71F28513F3C9A377A0AA1149 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BodyBankEnterpriseDemo/Pods-BodyBankEnterpriseDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSAppSync/AWSAppSync.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSS3/AWSS3.framework",
+				"${BUILT_PRODUCTS_DIR}/FCFileManager/FCFileManager.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAppSync.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSS3.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FCFileManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BodyBankEnterpriseDemo/Pods-BodyBankEnterpriseDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D966B1FB4B146FB0B84D1D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BodyBankEnterpriseDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8E58B47C2173FA2F00FAB5C2 /* Sources */ = {
@@ -430,15 +559,13 @@
 		};
 		8E58B4A92173FA3200FAB5C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40E40512F7FD63A3C333EE32 /* Pods-BodyBankEnterpriseDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UQ5XKXJJ74;
 				INFOPLIST_FILE = BodyBankEnterpriseDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.skonb.BodyBankEnterpriseDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -448,15 +575,13 @@
 		};
 		8E58B4AA2173FA3200FAB5C2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A04C285221383FEE1A18A841 /* Pods-BodyBankEnterpriseDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UQ5XKXJJ74;
 				INFOPLIST_FILE = BodyBankEnterpriseDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.skonb.BodyBankEnterpriseDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -466,17 +591,14 @@
 		};
 		8E58B4AC2173FA3200FAB5C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B7EDB3016D9C3C33E90DCA4 /* Pods-BodyBankEnterpriseDemoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UQ5XKXJJ74;
 				INFOPLIST_FILE = BodyBankEnterpriseDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.skonb.BodyBankEnterpriseDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -487,17 +609,14 @@
 		};
 		8E58B4AD2173FA3200FAB5C2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE2DD1FB520D82693C3E0707 /* Pods-BodyBankEnterpriseDemoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UQ5XKXJJ74;
 				INFOPLIST_FILE = BodyBankEnterpriseDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.skonb.BodyBankEnterpriseDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -508,16 +627,13 @@
 		};
 		8E58B4AF2173FA3200FAB5C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8C26AEF6D63093F676022A5 /* Pods-BodyBankEnterpriseDemoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UQ5XKXJJ74;
 				INFOPLIST_FILE = BodyBankEnterpriseDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.skonb.BodyBankEnterpriseDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -528,16 +644,13 @@
 		};
 		8E58B4B02173FA3200FAB5C2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8355E24B0E6B5B03B20FD0E /* Pods-BodyBankEnterpriseDemoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UQ5XKXJJ74;
 				INFOPLIST_FILE = BodyBankEnterpriseDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.skonb.BodyBankEnterpriseDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
