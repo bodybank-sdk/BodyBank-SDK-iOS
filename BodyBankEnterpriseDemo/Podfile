@@ -7,6 +7,7 @@ target 'BodyBankEnterpriseDemo' do
 
   # Pods for BodyBankEnterpriseDemo
   pod 'BodyBankEnterprise', git: 'https://github.com/skonb/BodyBankSDK'
+  pod 'JWTDecode'
 
   target 'BodyBankEnterpriseDemoTests' do
     inherit! :search_paths

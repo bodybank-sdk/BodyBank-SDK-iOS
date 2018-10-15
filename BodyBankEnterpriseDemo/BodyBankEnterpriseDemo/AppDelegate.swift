@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import BodyBankEnterprise
+import JWTDecode
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +18,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let provider = TokenProvider()
+        BodyBankEnterprise.initialize(tokenProvider: provider)
+        
+        guard let jwt = try? decode(jwt: provider.token)else{
+            print("malformed token")
+            return false
+        }
+        print("Token: \(jwt)")
+
         return true
     }
 

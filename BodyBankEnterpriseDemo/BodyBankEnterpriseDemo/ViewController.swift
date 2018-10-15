@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import BodyBankEnterprise
 
 class ViewController: UIViewController {
 
@@ -14,7 +15,54 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
 
+    func makeRequest(){
+        var params = EstimationParameter()
+        params.frontImage = UIImage(named: "logo")
+        params.sideImage = UIImage(named: "logo")
+        params.heightInCm = 180
+        params.weightInKg = 90
+        params.age = 30
+        params.gender = .male
+        BodyBankEnterprise.createEstimationRequest(estimationParameter: params, callback: { (request, errors) in
+            if let request = request, let id = request.id{
+                print(id) // id can be used to track estimation request
+                BodyBankEnterprise.listEstimationRequests(limit: nil, nextToken: nil, callback: { (requests, nextToken, errors) in
+                    if let requests = requests{
+                        print(requests)
+                    }
+                })
+                
+                BodyBankEnterprise.getEstimationRequest(id: id, callback: { (request, errors) in
+                    if let _ = request{
+                        // Do something with request
+                    }
+                })
+                
+                BodyBankEnterprise.subscribeUpdateOfEstimationRequests(successCallback: { (request) in
+                    print(request)
+                }, errorCallback: { errors in
+                   print(errors)
+                })
+            }else if let errors = errors{
+                errors.forEach({ (error) in
+                    print(error.localizedDescription)
+                })
+            }else{
+                print("fail")
+            }
+        })
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        BodyBankEnterprise.unsubscribeEstimationRequests()
+    }
+    
 
 }
 

@@ -16,6 +16,8 @@
 		8E58B48E2173FA3200FAB5C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E58B48C2173FA3200FAB5C2 /* LaunchScreen.storyboard */; };
 		8E58B4992173FA3200FAB5C2 /* BodyBankEnterpriseDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E58B4982173FA3200FAB5C2 /* BodyBankEnterpriseDemoTests.swift */; };
 		8E58B4A42173FA3200FAB5C2 /* BodyBankEnterpriseDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E58B4A32173FA3200FAB5C2 /* BodyBankEnterpriseDemoUITests.swift */; };
+		8E58B4B2217409E000FAB5C2 /* TokenProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E58B4B1217409E000FAB5C2 /* TokenProvider.swift */; };
+		8E58B4B421740A0100FAB5C2 /* bodybank-config.json in Resources */ = {isa = PBXBuildFile; fileRef = 8E58B4B321740A0100FAB5C2 /* bodybank-config.json */; };
 		C73FE4EF918296CD8AF2DC3A /* Pods_BodyBankEnterpriseDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B034148D30E5A0A5A7246E6E /* Pods_BodyBankEnterpriseDemoUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +55,8 @@
 		8E58B49F2173FA3200FAB5C2 /* BodyBankEnterpriseDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BodyBankEnterpriseDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E58B4A32173FA3200FAB5C2 /* BodyBankEnterpriseDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyBankEnterpriseDemoUITests.swift; sourceTree = "<group>"; };
 		8E58B4A52173FA3200FAB5C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E58B4B1217409E000FAB5C2 /* TokenProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenProvider.swift; sourceTree = "<group>"; };
+		8E58B4B321740A0100FAB5C2 /* bodybank-config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "bodybank-config.json"; sourceTree = "<group>"; };
 		A04C285221383FEE1A18A841 /* Pods-BodyBankEnterpriseDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BodyBankEnterpriseDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-BodyBankEnterpriseDemo/Pods-BodyBankEnterpriseDemo.release.xcconfig"; sourceTree = "<group>"; };
 		B034148D30E5A0A5A7246E6E /* Pods_BodyBankEnterpriseDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BodyBankEnterpriseDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCE435F8E2E63CFE7D12796F /* Pods_BodyBankEnterpriseDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BodyBankEnterpriseDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +131,8 @@
 		8E58B4822173FA2F00FAB5C2 /* BodyBankEnterpriseDemo */ = {
 			isa = PBXGroup;
 			children = (
+				8E58B4B321740A0100FAB5C2 /* bodybank-config.json */,
+				8E58B4B1217409E000FAB5C2 /* TokenProvider.swift */,
 				8E58B4832173FA2F00FAB5C2 /* AppDelegate.swift */,
 				8E58B4852173FA2F00FAB5C2 /* ViewController.swift */,
 				8E58B4872173FA2F00FAB5C2 /* Main.storyboard */,
@@ -176,7 +182,7 @@
 				8E58B47C2173FA2F00FAB5C2 /* Sources */,
 				8E58B47D2173FA2F00FAB5C2 /* Frameworks */,
 				8E58B47E2173FA2F00FAB5C2 /* Resources */,
-				71F28513F3C9A377A0AA1149 /* [CP] Embed Pods Frameworks */,
+				749D03DDEF514878F593DE89 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -274,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E58B48E2173FA3200FAB5C2 /* LaunchScreen.storyboard in Resources */,
+				8E58B4B421740A0100FAB5C2 /* bodybank-config.json in Resources */,
 				8E58B48B2173FA3200FAB5C2 /* Assets.xcassets in Resources */,
 				8E58B4892173FA2F00FAB5C2 /* Main.storyboard in Resources */,
 			);
@@ -332,7 +339,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		71F28513F3C9A377A0AA1149 /* [CP] Embed Pods Frameworks */ = {
+		749D03DDEF514878F593DE89 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -342,7 +349,9 @@
 				"${BUILT_PRODUCTS_DIR}/AWSAppSync/AWSAppSync.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSS3/AWSS3.framework",
+				"${PODS_ROOT}/BodyBankEnterprise/BodyBankEnterprise.framework",
 				"${BUILT_PRODUCTS_DIR}/FCFileManager/FCFileManager.framework",
+				"${BUILT_PRODUCTS_DIR}/JWTDecode/JWTDecode.framework",
 				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
 				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
 			);
@@ -351,7 +360,9 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAppSync.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSS3.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BodyBankEnterprise.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FCFileManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JWTDecode.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
 			);
@@ -386,6 +397,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E58B4862173FA2F00FAB5C2 /* ViewController.swift in Sources */,
+				8E58B4B2217409E000FAB5C2 /* TokenProvider.swift in Sources */,
 				8E58B4842173FA2F00FAB5C2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
