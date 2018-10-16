@@ -10,15 +10,9 @@ import Foundation
 import BodyBankEnterprise
 
 class TokenProvider: BodyBankTokenProvider{
-    var token: String{
+    var token: BodyBankToken{
         get{
-            return ""
-        }
-    }
-    
-    var identityId: String{
-        get{
-            return ""
+            return BodyBankToken(jwtToken: "", identityId: "")
         }
     }
 }

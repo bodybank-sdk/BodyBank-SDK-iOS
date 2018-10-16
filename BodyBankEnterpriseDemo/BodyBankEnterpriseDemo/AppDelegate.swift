@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let provider = TokenProvider()
         BodyBankEnterprise.initialize(tokenProvider: provider)
         
-        guard let jwt = try? decode(jwt: provider.token)else{
+        guard let jwt = try? decode(jwt: provider.token.jwtToken)else{
             print("malformed token")
             return false
         }
