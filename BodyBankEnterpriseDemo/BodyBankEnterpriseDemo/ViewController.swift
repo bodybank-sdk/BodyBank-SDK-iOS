@@ -15,11 +15,20 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         makeRequest()
+//        makeFetch()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
     }
+    
+    func makeFetch(){
+        BodyBankEnterprise.listEstimationRequests(limit: 20, nextToken: nil, callback: { (requests, nextToken, errors) in
+            print(requests)
+        })
+    }
+    
+    
 
     func makeRequest(){
         var params = EstimationParameter()
@@ -44,10 +53,9 @@ class ViewController: UIViewController {
                     }
                 })
                 
-                BodyBankEnterprise.subscribeUpdateOfEstimationRequests(successCallback: { (request) in
+                BodyBankEnterprise.subscribeUpdateOfEstimationRequests(callback: { (request, errors) in
                     print(request)
-                }, errorCallback: { errors in
-                   print(errors)
+                    print(errors)
                 })
             }else if let errors = errors{
                 errors.forEach({ (error) in

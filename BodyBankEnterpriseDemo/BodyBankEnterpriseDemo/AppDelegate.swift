@@ -19,7 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         let provider = TokenProvider()
-        BodyBankEnterprise.initialize(tokenProvider: provider)
+        try! BodyBankEnterprise.initialize(tokenProvider: provider)
+        BodyBankEnterprise.clearCredentials()
         
         guard let jwt = try? decode(jwt: provider.token.jwtToken)else{
             print("malformed token")
