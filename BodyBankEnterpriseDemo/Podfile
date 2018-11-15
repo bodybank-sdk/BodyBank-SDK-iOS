@@ -6,7 +6,7 @@ target 'BodyBankEnterpriseDemo' do
   use_frameworks!
 
   # Pods for BodyBankEnterpriseDemo
-  pod 'BodyBankEnterprise', git: 'https://github.com/skonb/BodyBankSDK'
+  pod 'BodyBankEnterprise'
   pod 'JWTDecode'
 
   target 'BodyBankEnterpriseDemoTests' do
