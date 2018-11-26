@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
     s.name = 'BodyBankEnterprise'
     s.summary = 'BodyBank Enterprise iOS SDK'
-    s.version = '0.0.20'
+    s.version = '0.0.22'
     s.author = 'Original Inc.'
     s.license = 'Proprietary'
     s.homepage = 'https://originalstitch.com'
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
         :http => "https://github.com/skonb/BodyBankSDK/raw/master/BodyBankEnterprise.framework.zip"
     }
     s.ios.vendored_frameworks = 'BodyBankEnterprise.framework'
-    s.dependency 'AWSAppSync', '2.6.24'
+    s.dependency 'AWSAppSync', '2.7.0'
     s.dependency 'AWSS3', '2.7.3'
     s.dependency 'FCFileManager', '1.0.20'
     s.dependency 'JWTDecode', '2.1.1'
