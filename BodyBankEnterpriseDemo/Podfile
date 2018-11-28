@@ -6,8 +6,7 @@ target 'BodyBankEnterpriseDemo' do
   use_frameworks!
 
   # Pods for BodyBankEnterpriseDemo
-  pod 'BodyBankEnterprise'
-  pod 'JWTDecode'
+  pod 'BodyBankEnterprise', '0.0.25'
 
   target 'BodyBankEnterpriseDemoTests' do
     inherit! :search_paths

@@ -15,11 +15,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         makeRequest()
-//        makeFetch()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        BodyBankEnterprise.subscribeUpdateOfEstimationRequests { (request, errors) in
+            print(request)
+        }
     }
     
     func makeFetch(){

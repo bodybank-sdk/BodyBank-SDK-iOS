@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1CE305A28A8E51D4BC36C8BF /* Pods_BodyBankEnterpriseDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCE435F8E2E63CFE7D12796F /* Pods_BodyBankEnterpriseDemo.framework */; };
 		5DB8B16683013398DBD445F9 /* Pods_BodyBankEnterpriseDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10E33AE6DDC06B4DFEC36248 /* Pods_BodyBankEnterpriseDemoTests.framework */; };
+		8E0E4D8521AE9021004ACECC /* bodybank-config.json in Resources */ = {isa = PBXBuildFile; fileRef = 8E0E4D8421AE9021004ACECC /* bodybank-config.json */; };
 		8E58B4842173FA2F00FAB5C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E58B4832173FA2F00FAB5C2 /* AppDelegate.swift */; };
 		8E58B4862173FA2F00FAB5C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E58B4852173FA2F00FAB5C2 /* ViewController.swift */; };
 		8E58B4892173FA2F00FAB5C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E58B4872173FA2F00FAB5C2 /* Main.storyboard */; };
@@ -16,8 +17,6 @@
 		8E58B48E2173FA3200FAB5C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E58B48C2173FA3200FAB5C2 /* LaunchScreen.storyboard */; };
 		8E58B4992173FA3200FAB5C2 /* BodyBankEnterpriseDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E58B4982173FA3200FAB5C2 /* BodyBankEnterpriseDemoTests.swift */; };
 		8E58B4A42173FA3200FAB5C2 /* BodyBankEnterpriseDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E58B4A32173FA3200FAB5C2 /* BodyBankEnterpriseDemoUITests.swift */; };
-		8E58B4B2217409E000FAB5C2 /* TokenProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E58B4B1217409E000FAB5C2 /* TokenProvider.swift */; };
-		8E58B4B421740A0100FAB5C2 /* bodybank-config.json in Resources */ = {isa = PBXBuildFile; fileRef = 8E58B4B321740A0100FAB5C2 /* bodybank-config.json */; };
 		C73FE4EF918296CD8AF2DC3A /* Pods_BodyBankEnterpriseDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B034148D30E5A0A5A7246E6E /* Pods_BodyBankEnterpriseDemoUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +41,7 @@
 		10E33AE6DDC06B4DFEC36248 /* Pods_BodyBankEnterpriseDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BodyBankEnterpriseDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40E40512F7FD63A3C333EE32 /* Pods-BodyBankEnterpriseDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BodyBankEnterpriseDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BodyBankEnterpriseDemo/Pods-BodyBankEnterpriseDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		4B7EDB3016D9C3C33E90DCA4 /* Pods-BodyBankEnterpriseDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BodyBankEnterpriseDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BodyBankEnterpriseDemoTests/Pods-BodyBankEnterpriseDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8E0E4D8421AE9021004ACECC /* bodybank-config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "bodybank-config.json"; sourceTree = "<group>"; };
 		8E58B4802173FA2F00FAB5C2 /* BodyBankEnterpriseDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BodyBankEnterpriseDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E58B4832173FA2F00FAB5C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E58B4852173FA2F00FAB5C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,8 +55,6 @@
 		8E58B49F2173FA3200FAB5C2 /* BodyBankEnterpriseDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BodyBankEnterpriseDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E58B4A32173FA3200FAB5C2 /* BodyBankEnterpriseDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyBankEnterpriseDemoUITests.swift; sourceTree = "<group>"; };
 		8E58B4A52173FA3200FAB5C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8E58B4B1217409E000FAB5C2 /* TokenProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenProvider.swift; sourceTree = "<group>"; };
-		8E58B4B321740A0100FAB5C2 /* bodybank-config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "bodybank-config.json"; sourceTree = "<group>"; };
 		A04C285221383FEE1A18A841 /* Pods-BodyBankEnterpriseDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BodyBankEnterpriseDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-BodyBankEnterpriseDemo/Pods-BodyBankEnterpriseDemo.release.xcconfig"; sourceTree = "<group>"; };
 		B034148D30E5A0A5A7246E6E /* Pods_BodyBankEnterpriseDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BodyBankEnterpriseDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCE435F8E2E63CFE7D12796F /* Pods_BodyBankEnterpriseDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BodyBankEnterpriseDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,8 +129,7 @@
 		8E58B4822173FA2F00FAB5C2 /* BodyBankEnterpriseDemo */ = {
 			isa = PBXGroup;
 			children = (
-				8E58B4B321740A0100FAB5C2 /* bodybank-config.json */,
-				8E58B4B1217409E000FAB5C2 /* TokenProvider.swift */,
+				8E0E4D8421AE9021004ACECC /* bodybank-config.json */,
 				8E58B4832173FA2F00FAB5C2 /* AppDelegate.swift */,
 				8E58B4852173FA2F00FAB5C2 /* ViewController.swift */,
 				8E58B4872173FA2F00FAB5C2 /* Main.storyboard */,
@@ -280,7 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E58B48E2173FA3200FAB5C2 /* LaunchScreen.storyboard in Resources */,
-				8E58B4B421740A0100FAB5C2 /* bodybank-config.json in Resources */,
+				8E0E4D8521AE9021004ACECC /* bodybank-config.json in Resources */,
 				8E58B48B2173FA3200FAB5C2 /* Assets.xcassets in Resources */,
 				8E58B4892173FA2F00FAB5C2 /* Main.storyboard in Resources */,
 			);
@@ -345,13 +342,14 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-BodyBankEnterpriseDemo/Pods-BodyBankEnterpriseDemo-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-BodyBankEnterpriseDemo/Pods-BodyBankEnterpriseDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AWSAppSync/AWSAppSync.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSS3/AWSS3.framework",
 				"${PODS_ROOT}/BodyBankEnterprise/BodyBankEnterprise.framework",
 				"${BUILT_PRODUCTS_DIR}/FCFileManager/FCFileManager.framework",
 				"${BUILT_PRODUCTS_DIR}/JWTDecode/JWTDecode.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainSwift/KeychainSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
 				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
 			);
@@ -363,12 +361,13 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BodyBankEnterprise.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FCFileManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JWTDecode.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BodyBankEnterpriseDemo/Pods-BodyBankEnterpriseDemo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BodyBankEnterpriseDemo/Pods-BodyBankEnterpriseDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8D966B1FB4B146FB0B84D1D4 /* [CP] Check Pods Manifest.lock */ = {
@@ -397,7 +396,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E58B4862173FA2F00FAB5C2 /* ViewController.swift in Sources */,
-				8E58B4B2217409E000FAB5C2 /* TokenProvider.swift in Sources */,
 				8E58B4842173FA2F00FAB5C2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -577,7 +575,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UQ5XKXJJ74;
 				INFOPLIST_FILE = BodyBankEnterpriseDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.skonb.BodyBankEnterpriseDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -593,7 +594,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UQ5XKXJJ74;
 				INFOPLIST_FILE = BodyBankEnterpriseDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.skonb.BodyBankEnterpriseDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -610,7 +614,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UQ5XKXJJ74;
 				INFOPLIST_FILE = BodyBankEnterpriseDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.skonb.BodyBankEnterpriseDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -628,7 +636,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UQ5XKXJJ74;
 				INFOPLIST_FILE = BodyBankEnterpriseDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.skonb.BodyBankEnterpriseDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -645,7 +657,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UQ5XKXJJ74;
 				INFOPLIST_FILE = BodyBankEnterpriseDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.skonb.BodyBankEnterpriseDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -662,7 +678,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UQ5XKXJJ74;
 				INFOPLIST_FILE = BodyBankEnterpriseDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.skonb.BodyBankEnterpriseDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;

@@ -8,7 +8,6 @@
 
 import UIKit
 import BodyBankEnterprise
-import JWTDecode
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,15 +17,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        let provider = TokenProvider()
-        try! BodyBankEnterprise.initialize(tokenProvider: provider)
-        BodyBankEnterprise.clearCredentials()
+        //For development only
+        //Replace admin api url/api key with those provided
+        let apiUrl = "API URL"
+        let apiKey = "API KEY"
+        let tokenProvider = DirectTokenProvider(apiUrl: apiUrl, apiKey: apiKey)
+        tokenProvider.userId = "test_usr_id" //Replace this to any user id that is used for the development
+        tokenProvider.tokenDuration = 86400 //1 day duration. Please shorten this to test expiry.
+        try! BodyBankEnterprise.initialize(tokenProvider: tokenProvider)
         
-        guard let jwt = try? decode(jwt: provider.token.jwtToken)else{
-            print("malformed token")
-            return false
-        }
-        print("Token: \(jwt)")
+        
+        //For production
+//        let tokenProvider = DefaultTokenProvider()
+//        tokenProvider.setRestoreTokenBlock { callback in
+//            let token = BodyBankToken()
+//            // Fetch token from server using Admin API
+//            // IMPLEMENT HERE
+//            callback(token, nil)
+//        }
+//        try! BodyBankEnterprise.initialize(tokenProvider: tokenProvider)
+
 
         return true
     }
