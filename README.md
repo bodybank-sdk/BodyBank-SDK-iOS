@@ -1,4 +1,15 @@
 # BodyBank Enterprise SDK Readme
+This SDK takes care of...
+
+1. Creation & Restoration of token
+2. Creation of new body size estimation request
+3. Subscription of body size estimations' status
+4. Getting result data of body size estimations
+
+NO UI IS PROVIDED BY THIS SDK.
+
+We provide an [UI SDK](https://github.com/bodybank-sdk/BodyBank-SDK-iOS-UI).
+And the source of UI SDK is open, so please fork or take a look inside for yourself.
 
 ## Version
 2018-12-21-1
