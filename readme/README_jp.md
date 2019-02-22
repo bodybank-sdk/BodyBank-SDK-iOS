@@ -173,7 +173,9 @@ BodyBankEnterprise.defaultTokenProvider()
 
 推定が完了するには数十秒程度の時間がかかりますので、推定完了もしくは失敗のタイミングで何かしらの処理を行う場合、  
 `subscribeUpdateOfEstimationRequests`でリクエストステータスの変更をsubscribeできます。  
-最終的なリクエストのステータスは`completed`または`failed`ですので、成功・失敗に応じた処理を行いたい場合は下記サンプルのように記述してください。
+最終的なリクエストのステータスは`completed`または`failed`ですので、成功・失敗に応じた処理を行いたい場合は下記サンプルのように記述してください。  
+
+subscribeは、リクエストを送信する前に有効化してください。  
 
 また、subscribeを解除したい場合は`unsubscribeEstimationRequests`をコールしてください。
 
@@ -202,7 +204,9 @@ BodyBankEnterprise.unsubscribeEstimationRequests()
 `createEstimationRequest`で、新規推定リクエストの作成を行うことができます。  
 第一引数の`estimationParameter`には、`EstimationParameter`型を利用してください。  
 第二引数のcallbackは、推定リクエストが正常に作成された場合・作成出来なかった場合、いずれの場合もコールされます。  
-下記サンプルのように、必要な処理を設定してください。
+下記サンプルのように、必要な処理を設定してください。  
+
+リクエストは、全ての必須パラメータが揃うタイミング(カメラで正面・側面写真を取り終わった瞬間など)でコールしてください。
 
 ```swift
 var params = EstimationParameter()
@@ -226,7 +230,10 @@ BodyBankEnterprise.createEstimationRequest(estimationParameter: params, callback
 
 利用中ユーザーが行った全ての推定リクエストを取得する`listEstimationRequests`  
 引数にidを指定し、特定リクエストの詳細を取得する`getEstimationRequest`  
-が用意されています。
+が用意されています。  
+
+ユーザーが過去に行ったリクエストのリストを出力したい場合や、  
+直前のリクエストの詳細結果を取得したい場合などに利用してください。  
 
 ```swift
 // List estimation requests
