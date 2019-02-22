@@ -89,9 +89,37 @@ tokenProvider.setRestoreTokenBlock(block: {[unowned self] callback in
 `API key`及び`API endpoint`を利用して、トークンを取得することができます。  
 また、`userId`はユーザーのユニークな情報をハッシュ化したものなどを推奨します。  
 
-実装はSDK利用者の環境によりますが、例としてNode.jsの場合は下記のようになります。
+実装はSDK利用者の環境によりますが、例としてGoogle Cloud Functionsに実装した場合のjavascriptでの取得処理は下記のようになります。  
 
 ```javascript
+exports.getBodyBankJWTToken = functions.https.onCall((data, context) => {
+    if (!context.auth) {
+        throw new functions.https.HttpsError("failed-precondition", 'Only authenticated user can call this function')
+    }
+
+    const apiKey = "YOUR_API_KEY";
+    const apiEndpoint = "YOUR_API_ENDPOINT";
+    const userId = "HASHED_USER_ID"; // ユーザーidをそのまま入れるのではなく、ユーザーを特定できる文字列のHash値などをご利用ください
+
+    return new Promise((resolve, reject) => {
+        return request.post(apiEndpoint, {
+            headers: {"x-api-key": apiKey},
+            json: {user_id: userId}
+        }, (error, response, body) => {
+            if (error) {
+                reject(error)
+            } else {
+                const identityId = body.content.token.identity_id;
+                const documentReference = admin.firestore().collection('version').doc('1').collection('TABLE_NAME').doc(userId);
+                documentReference.set({"bodyBankUserId": identityId}, {merge: true}).then((value) => {
+                    resolve(body.content.token);
+                }).catch((reason) => {
+                    reject(reason);
+                });
+            }
+        });
+    });
+});
 ```
 
 #### 開発用Token Provider
