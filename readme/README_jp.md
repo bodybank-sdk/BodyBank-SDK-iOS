@@ -11,6 +11,9 @@
 UIのサンプルとして、[UI SDK](https://github.com/bodybank-sdk/BodyBank-SDK-iOS-UI)を提供しています。  
 UI SDKのソースはopenですので、必要に応じてforkもしくは実装の確認などにご利用ください。
 
+なお、UI SDKは本SDKと同時に利用することを前提とした作りとなっております。  
+UI SDKそのものはアプリとして立ち上げることは出来ません。ご了承ください。  
+
 ## Requirement
 ご契約後に次のアイテムをお渡しします。
 
@@ -49,8 +52,8 @@ pod 'BodyBankEnterprise'
 
 本SDKが提供する機能を利用するため、トークンの発行が必要です。  
 
-`DefaultTokenProvider`をインスタンス化し、トークン取得処理を`restoreTokenBlock`にセットしてください。  
-`restoreTokenBlock`はトークンが失効ないし失効しかけている場合に内部的に呼ばれます。  
+`AppDelegate.swift`内で`DefaultTokenProvider`をインスタンス化し、トークン取得処理を`restoreTokenBlock`にセットしてください。  
+`restoreTokenBlock`はトークンが失効ないし失効しかけている場合にSDK内部的に呼ばれます。  
 
 なお、下記のサンプルコードにおいては、トークン取得処理をGoogle Cloud Functionsに登録し、意図的に隠蔽しています。  
 これは、アプリ内への`API key`及び`API endpoint`の記述を避け、流出を防ぐためです。  
