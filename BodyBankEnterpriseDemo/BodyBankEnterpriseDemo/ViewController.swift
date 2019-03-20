@@ -19,9 +19,16 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        BodyBankEnterprise.subscribeUpdateOfEstimationRequests { (request, errors) in
-            print(request)
-        }
+
+        BodyBankEnterprise.clearCredentials()
+        BodyBankEnterprise.defaultTokenProvider()?.clear()
+      
+        BodyBankEnterprise.defaultTokenProvider()?.restoreToken(callback: { _, _ in
+            BodyBankEnterprise.subscribeUpdateOfEstimationRequests(callback: { (request, errors) in
+                print(request)
+                print(errors)
+            })
+        })
     }
     
     func makeFetch(){
@@ -53,11 +60,6 @@ class ViewController: UIViewController {
                     if let _ = request{
                         // Do something with request
                     }
-                })
-                
-                BodyBankEnterprise.subscribeUpdateOfEstimationRequests(callback: { (request, errors) in
-                    print(request)
-                    print(errors)
                 })
             }else if let errors = errors{
                 errors.forEach({ (error) in
