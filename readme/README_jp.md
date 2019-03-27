@@ -14,6 +14,9 @@ UI SDKのソースはopenですので、必要に応じてforkもしくは実装
 なお、UI SDKは本SDKと同時に利用することを前提とした作りとなっております。  
 UI SDKそのものはアプリとして立ち上げることは出来ません。ご了承ください。  
 
+## Supported iOS Version
+iOS9 or higher
+
 ## Requirement
 ご契約後に次のアイテムをお渡しします。
 
