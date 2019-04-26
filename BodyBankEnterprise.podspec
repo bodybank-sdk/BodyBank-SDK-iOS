@@ -13,6 +13,7 @@ Pod::Spec.new do |s|
     s.ios.vendored_frameworks = 'BodyBankEnterprise.framework'
     s.dependency 'AWSAppSync', '2.9.1'
     s.dependency 'AWSS3', '2.8.4'
+    s.dependency 'ReachabilitySwift', '4.3.0'
     s.dependency 'FCFileManager', '1.0.20'
     s.dependency 'JWTDecode', '2.1.1'
     s.dependency 'KeychainSwift', '13.0.0'
