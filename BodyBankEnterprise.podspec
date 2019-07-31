@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
     s.name = 'BodyBankEnterprise'
     s.summary = 'BodyBank Enterprise iOS SDK'
-    s.version = '0.0.49'
+    s.version = '0.0.49-xcode10.1'
     s.author = 'Original Inc.'
     s.license = 'Proprietary'
     s.homepage = 'https://originalstitch.com'
