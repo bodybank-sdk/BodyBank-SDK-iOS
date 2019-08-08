@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
     s.summary = 'BodyBank Enterprise iOS SDK'
     s.version = '0.1.0'
     s.author = 'Bodygram Inc.'
-    s.license = { :type => 'MIT', :file => 'LICENSE.md' }
+    s.license = { :type => 'MIT'}
     s.homepage = 'https://github.com/bodybank-sdk/BodyBank-SDK-iOS'
     s.platform = :ios, '10.0'
     s.swift_version = '4.2'
