@@ -6,7 +6,7 @@ target 'BodyBankEnterpriseDemo' do
   use_frameworks!
 
   # Pods for BodyBankEnterpriseDemo
-  pod 'BodyBankEnterprise', '0.0.39'
+  pod 'BodyBankEnterprise'
 
   target 'BodyBankEnterpriseDemoTests' do
     inherit! :search_paths

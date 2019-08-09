@@ -11,9 +11,9 @@ Pod::Spec.new do |s|
         :http => "https://github.com/bodybank-sdk/BodyBank-SDK-iOS/raw/master/BodyBankEnterprise.framework.zip"
     }
     s.ios.vendored_frameworks = 'BodyBankEnterprise.framework'
-    s.dependency 'AWSAppSync', '~> 2.14.0'
+    s.dependency 'AWSAppSync', '~> 2.14.1'
     s.dependency 'AWSS3', '~> 2.10.2'
-    s.dependency 'ReachabilitySwift', '~> 4.3.1'
+    s.dependency 'ReachabilitySwift', '~> 4.3.0'
     s.dependency 'FCFileManager', '~> 1.0.20'
     s.dependency 'JWTDecode', '~> 2.3.0'
     s.dependency 'KeychainSwift', '~> 16.0.1'
