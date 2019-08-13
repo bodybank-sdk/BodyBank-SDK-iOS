@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
     s.license = { :type => 'MIT'}
     s.homepage = 'https://github.com/bodybank-sdk/BodyBank-SDK-iOS'
     s.platform = :ios, '10.0'
-    s.swift_version = '4.2'
+    s.swift_version = '5.0'
     s.source = {
         :http => "https://github.com/bodybank-sdk/BodyBank-SDK-iOS/raw/master/BodyBankEnterprise.framework.zip"
     }
