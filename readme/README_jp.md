@@ -15,7 +15,7 @@ UI SDKのソースはopenですので、必要に応じてforkもしくは実装
 UI SDKそのものはアプリとして立ち上げることは出来ません。ご了承ください。  
 
 ## Supported iOS Version
-iOS9 or higher
+iOS10 or higher
 
 ## Requirement
 ご契約後に次のアイテムをお渡しします。
@@ -128,6 +128,7 @@ exports.getBodyBankJWTToken = functions.https.onCall((data, context) => {
 });
 ```
 
+
 #### 開発用Token Provider
 
 開発用に取り急ぎトークンを取得したい場合、`DirectTokenProvider`を利用することができます。  
@@ -151,7 +152,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
   let tokenProvider = DefaultTokenProvider()
 
   tokenProvider.setRestoreTokenBlock(block: {[unowned self] callback in
-    let token = BodyBankToken()
+    let token = BodyBankToken()　// (補足※1)
     // トークンを再発行して得られるjwt_token と identity_idからBodyBankTokenを作成します
     callback(token, nil)
   })
@@ -160,6 +161,37 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
   return true
 }
+```
+
+### SDKの初期化処理(補足※1）
+上記のGoogle Cloud Functionsで作成した
+getBodyBankJWTTokenを使用した場合, 以下の様にTokenを入れることができます
+```
+if Auth.auth().currentUser != nil {
+            
+            // Google Cloud Functions　で用意したFunctionを叩き、tokenとidを取得する
+            let functions = Functions.functions()
+            functions.httpsCallable("getBodyBankJWTToken").call {(result, error) in
+
+                if let error = error {
+                    callback((nil, error))
+                    return
+                }
+                
+                //　上記※１の実態 (通信で取得してきたtokenを入れる)
+                var token = BodyBankToken()
+                
+                if let jwtToken = (result?.data as? Dictionary<String, Any>)?["jwt_token"] as? String{
+                    token.jwtToken = jwtToken
+                }
+                                        
+                if let identityId = (result?.data as? Dictionary<String, Any>)?["identity_id"] as? String{
+                    token.identityId = identityId
+                }
+
+                callback((token, nil))
+            }
+        }
 ```
 
 ### SDK初期化後のjwtトークン修正
