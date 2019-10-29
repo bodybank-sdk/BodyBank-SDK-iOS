@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
     s.swift_version = '5.1'
     s.source = {
         :http => "https://github.com/bodybank-sdk/BodyBank-SDK-iOS/raw/v0.1.3/BodyBankEnterprise.framework.zip",
-        :sha1 => '1856d697ca6de0d4622f7ae53caffa07d84b26d5'
+        :sha1 => 'ce71bbe7c631dd3224438348179e4534b3f4c9af'
     }
     s.ios.vendored_frameworks = 'BodyBankEnterprise.framework'
     s.dependency 'AWSAppSync', '~> 2.15.0'
